@@ -1,0 +1,11 @@
+# Folder dependency yang super berat (WAJIB)
+node_modules/
+
+# File sistem Mac/Windows yang gak penting (Opsional tapi bagus)
+.DS_Store
+Thumbs.db
+
+# File log error (Opsional)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

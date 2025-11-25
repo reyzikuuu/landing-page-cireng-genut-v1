@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* --- KONFIGURASI TEMA (GANTI WARNA DI SINI) --- */
+@theme {
+  /* Warna Utama (Tombol Beli/Aksen Kuat) - Merah Pedas */
+  --color-primary: #e11d48; 
+  
+  /* Warna Sekunder (Background/Variasi) - Kuning/Oranye Gorengan */
+  --color-secondary: #fbbf24;
+  
+  /* Warna Teks Utama (Hitam yang tidak terlalu pekat agar mata nyaman) */
+  --color-text-dark: #1f2937;
+  
+  /* Font Keren (Kita pakai Poppins biar modern) */
+  --font-sans: "Poppins", sans-serif;
+
+  /* MENAMBAHKAN ANIMASI BARU: "NGAPUNG" */
+  --animate-ngapung: ngapung 3s ease-in-out infinite;
+  
+  @keyframes ngapung {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); } /* Naik 10px ke atas */
+  }
+
+  /* ANIMASI INFINITY SLIDER */
+  --animate-loop-scroll: loop-scroll 25s linear infinite;
+
+  @keyframes loop-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+
+}
+
+/* --- STYLE TAMBAHAN --- */
+@layer utilities {
+  /* Agar scroll halus saat klik menu */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Efek bayangan halus untuk foto produk */
+  .shadow-cireng {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
