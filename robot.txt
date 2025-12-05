@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://116b4445.landing-page-cireng-genut-v1.pages.dev/sitemap.xml
