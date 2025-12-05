@@ -284,92 +284,119 @@
 
     <!-- Order -->
 
-    <section id="order" class="py-20 bg-gray-50 relative">
+    <section id="order" class="py-24 bg-gray-50/50 relative overflow-hidden">
         
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
+
         <div class="max-w-7xl mx-auto px-6">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-primary font-bold uppercase tracking-wider text-sm mb-2">
-                    Promo Terbatas Hari Ini
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-primary font-bold uppercase tracking-wider text-sm mb-3">
+                    Pilihan Paket Simpel
                 </h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
-                    Pilih Paket Favoritmu, <br>
-                    <span class="text-primary">Siap Kirim Hari Ini!</span>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight text-balance">
+                    Gak Pake Ribet, <br>
+                    Pilih Sesuai Kebutuhanmu
                 </h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
                 
-                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 order-2 md:order-1">
-                    <div class="text-center mb-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Paket Icip-Icip</h4>
-                        <p class="text-gray-500 text-sm">Buat yang baru mau coba</p>
-                        <div class="my-4">
-                            <span class="text-gray-400 line-through text-sm">Rp 25.000</span>
-                            <div class="text-3xl font-bold text-gray-900">Rp 19.000</div>
+                <div class="bg-white rounded-[2rem] p-8 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                    
+                    <div class="text-center mb-8">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Paket Nyoba</h4>
+                        <p class="text-gray-500">Pas buat yang baru pertama kali.</p>
+                        
+                        <div class="my-6 flex justify-center items-baseline gap-2">
+                            <span class="text-gray-400 line-through text-lg">Rp 25k</span>
+                            <div class="text-4xl font-extrabold text-gray-900">Rp 19.000</div>
                         </div>
-                        <img src="./public/images/produk-kemasan.webp" alt="Cireng 1 Pack" class="w-32 h-32 object-contain mx-auto drop-shadow-md hover:scale-105 transition-transform">
+
+                        <img src="./public/images/produk-kemasan.webp" alt="Cireng 1 Pack" class="w-32 h-32 object-contain mx-auto drop-shadow-md group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <ul class="space-y-3 text-gray-600 text-sm mb-8">
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Isi 10 Pcs / Pack</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Bumbu Rujak Sachet</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Packing Standar</li>
+
+                    <ul class="space-y-4 text-gray-700 mb-8 text-left inline-block mx-auto flex-grow">
+                        <li class="flex items-start gap-3">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z'/%3E%3C/svg%3E" 
+                                 alt="Checklist Icon" 
+                                 class="w-5 h-5 object-contain shrink-0 mt-1">
+                            <span>Isi <strong>10 Pcs</strong> / Pack (Vakum)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z'/%3E%3C/svg%3E" 
+                                 alt="Checklist Icon" class="w-5 h-5 object-contain shrink-0 mt-1">
+                            <span>Termasuk Bumbu Rujak</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ef4444' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z'/%3E%3C/svg%3E" 
+                                 alt="Cross Icon" class="w-5 h-5 object-contain shrink-0 mt-1 grayscale opacity-50">
+                            <span>Belum Termasuk Extra Sambal</span>
+                        </li>
                     </ul>
-                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20pesan%20Paket%20ICIP-ICIP%20(1%20Pcs)" 
-                       class="block w-full py-3 rounded-xl bg-gray-100 text-gray-800 font-bold text-center hover:bg-gray-200 transition-colors">
-                       Pesan 1 Pcs
+
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20pesan%20Paket%20NYOBA%20(1%20Pcs)" 
+                       class="block w-full py-3.5 rounded-xl border-2 border-gray-900 text-gray-900 font-bold text-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                       Pesan 1 Pack Saja
                     </a>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 border-2 border-secondary shadow-xl relative transform md:-translate-y-4 order-1 md:order-2 z-10">
-                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg animate-pulse">
-                        🔥 PALING LARIS
+
+                <div class="bg-white rounded-[2rem] p-8 border-2 border-primary/30 shadow-lg shadow-primary/5 relative flex flex-col h-full overflow-hidden group hover:border-primary transition-colors duration-300">
+                    
+                    <div class="absolute top-6 right-6 bg-red-50 text-primary text-xs font-bold px-3 py-1.5 rounded-full border border-red-100 animate-pulse">
+                        ✨ Paling Hemat
                     </div>
 
-                    <div class="text-center mb-6 mt-4">
-                        <h4 class="text-2xl font-extrabold text-primary mb-2">Paket PUAS</h4>
-                        <p class="text-gray-500 text-sm">Paling pas buat stok di kulkas</p>
-                        <div class="my-4">
-                            <span class="text-gray-400 line-through text-sm">Rp 75.000</span>
-                            <div class="text-4xl font-extrabold text-gray-900">Rp 50.000</div>
-                            <span class="text-xs text-red-500 font-bold bg-red-50 px-2 py-1 rounded mt-2 inline-block">Hemat Rp 25.000!</span>
+                    <div class="text-center mb-8">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Paket Stok Kulkas</h4>
+                        <p class="text-gray-500">Lebih murah, bonusnya banyak.</p>
+                        
+                        <div class="my-6 flex justify-center items-baseline gap-2">
+                            <span class="text-gray-400 line-through text-lg">Rp 75k</span>
+                            <div class="text-4xl font-extrabold text-primary">Rp 50.000</div>
                         </div>
-                        <img src="./public/images/produk-kemasan.webp" alt="Cireng 3 Pack" class="w-40 h-40 object-contain mx-auto drop-shadow-xl hover:scale-105 transition-transform">
-                    </div>
-                    <ul class="space-y-3 text-gray-700 text-sm font-medium mb-8 bg-orange-50 p-4 rounded-xl">
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> <strong>Total 30 Pcs (3 Pack)</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> <strong>GRATIS</strong> Extra Sambal</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Packing Bubble Wrap Aman</li>
-                    </ul>
-                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20pesan%20Paket%20PUAS%20(3%20Pcs)%20yang%20promo!" 
-                       class="block w-full py-4 rounded-xl bg-primary text-white font-extrabold text-lg text-center shadow-lg shadow-red-500/30 hover:bg-red-700 hover:shadow-red-500/50 transition-all hover:-translate-y-1">
-                       Ambil Promo Ini 👉
-                    </a>
-                </div>
 
-                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 order-3">
-                    <div class="text-center mb-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-2">Paket RESELLER</h4>
-                        <p class="text-gray-500 text-sm">Cocok buat dijual lagi</p>
-                        <div class="my-4">
-                            <span class="text-gray-400 line-through text-sm">Rp 250.000</span>
-                            <div class="text-3xl font-bold text-gray-900">Rp 180.000</div>
-                        </div>
-                        <img src="./public/images/produk-kemasan.webp" alt="Cireng 10 Pack" class="w-32 h-32 object-contain mx-auto drop-shadow-md grayscale hover:grayscale-0 transition-all duration-500">
+                        <img src="./public/images/produk-kemasan.webp" alt="Cireng 3 Pack" class="w-40 h-40 object-contain mx-auto drop-shadow-xl group-hover:scale-110 transition-transform duration-500">
                     </div>
-                    <ul class="space-y-3 text-gray-600 text-sm mb-8">
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> <strong>Total 10 Pack</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Harga Grosir Termurah</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500 text-lg">✓</span> Prioritas Pengiriman</li>
+
+                    <ul class="space-y-4 text-gray-700 mb-8 text-left inline-block mx-auto flex-grow">
+                        <li class="flex items-start gap-3">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z'/%3E%3C/svg%3E" 
+                                 alt="Checklist Icon" class="w-5 h-5 object-contain shrink-0 mt-1">
+                            <span><strong>Total 30 Pcs</strong> (3 Pack Vakum)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z'/%3E%3C/svg%3E" 
+                                 alt="Checklist Icon" class="w-5 h-5 object-contain shrink-0 mt-1">
+                            <span><strong>GRATIS</strong> Extra Sambal Rujak</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z'/%3E%3C/svg%3E" 
+                                 alt="Checklist Icon" class="w-5 h-5 object-contain shrink-0 mt-1">
+                            <span>Packing Bubble Wrap Tebal</span>
+                        </li>
                     </ul>
-                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20join%20RESELLER%20Paket%20Borong" 
-                       class="block w-full py-3 rounded-xl bg-gray-100 text-gray-800 font-bold text-center hover:bg-gray-200 transition-colors">
-                       Chat Admin Grosir
+
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20mau%20pesan%20Paket%20STOK%20KULKAS%20(3%20Pcs)%20yang%20promo!" 
+                       class="block w-full py-3.5 rounded-xl bg-primary text-white font-extrabold text-lg text-center shadow-lg shadow-primary/20 hover:bg-red-700 hover:shadow-primary/40 transition-all duration-300 hover:-translate-y-1">
+                       Ambil Promo 3 Pack 👉
                     </a>
                 </div>
 
             </div>
             
+            <div class="text-center mt-16 pt-8 border-t border-gray-200 max-w-2xl mx-auto text-gray-500 text-sm flex flex-col md:flex-row items-center justify-center gap-4">
+                <p class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Tahan 30 Hari di Freezer
+                </p>
+                <span class="hidden md:block text-gray-300">|</span>
+                <p class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Garansi Kirim Aman
+                </p>
+            </div>
 
         </div>
     </section>
